@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <EditText
+            android:id="@+id/edt_shop_connect_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入联系人电话"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_13"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_shop_connect_phone_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/register_phone_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

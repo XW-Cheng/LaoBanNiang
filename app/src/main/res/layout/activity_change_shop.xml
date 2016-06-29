@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_change_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colores_news_14"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/img_change_shop_add_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_change_shop_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="新增商铺"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</FrameLayout>

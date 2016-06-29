@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="会员制可以更好的产生用户黏性，提升经营收益。"
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="老板娘会员说明："
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="1.当选中并打开会员等级后，我们将默认打开老板娘中普通会员卡等级，可以将所有有过消费的用户绑定成为普通会员；"
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="2.可以对申请会员的用户进行审核；"
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="3.通过制定会员等级及折扣力度可以有效的促进会员用户消费；"
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="4.会员等级最多可以5个等级；"
+        android:textColor="@color/colores_news_12"
+        android:textSize="15sp" />
+
+</LinearLayout>

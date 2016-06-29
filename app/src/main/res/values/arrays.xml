@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="acpda_name">
+        <item>到店服务</item>
+        <item>微信商城</item>
+        <item>货源批发</item>
+        <item>一键预约</item>
+        <item>切换商铺</item>
+        <item>店员管理</item>
+        <item>交易管理</item>
+        <item>会员管理</item>
+        <item>财务管理</item>
+        <item>我的资料</item>
+        <item>我的商铺</item>
+        <item>我的消息</item>
+        <item>其他功能</item>
+    </string-array>
+    <string-array name="acpda_content">
+        <item>商家发布并管理产品及查看呼叫信息，顾客能够自助点餐并选择所需服务及查看消费订单</item>
+        <item>商家可以随时查看并管理产品及设置广告，顾客可以查看产品并选购及查看订单</item>
+        <item>批发商可以查看并管理产品，发布阶梯报价，进货商可以查看商品并选购及查看订单</item>
+        <item>商家可以发布预约信息并进行管理，顾客可以预约所需产品并管理预约订单</item>
+        <item>针对一个商家可以有多家商铺的情况，可以切换商家的不同商铺</item>
+        <item>商家可以管理自家商铺内的员工，在应用内直接查看员工信息并可以联系员工</item>
+        <item>查看在线交易订单，并可对订单进行管理</item>
+        <item>通过增添会员不同等级的机制，帮助商家黏住客户</item>
+        <item>连通账户资金与银行卡的联系，方便账户资金周转</item>
+        <item>商家的资料自行管理</item>
+        <item>查看自家商铺的资料及对商铺资料的编辑，新增商铺</item>
+        <item>管理商家收到不同消息信息，及时通知商家相应的消息</item>
+        <item>包含意见反馈及退出登录功能</item>
+    </string-array>
+
+</resources>

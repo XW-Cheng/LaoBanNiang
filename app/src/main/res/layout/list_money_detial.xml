@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colores_news_01" />
+
+        <TextView
+            android:id="@+id/tv_list_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/colores_news_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/colores_news_10" />
+
+        <TextView
+            android:id="@+id/tv_more_list_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="查看更多"
+            android:textColor="@color/colores_news_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_more_list_money_detail"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/service_new_right"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colores_news_12" />
+
+    <ListView
+        android:id="@+id/listview_list_money_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/colores_news_12"
+        android:dividerHeight="@dimen/line"
+        android:paddingLeft="15dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/img_list_money_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+
+</LinearLayout>

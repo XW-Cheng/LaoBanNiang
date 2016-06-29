@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_actionproduceactivity_list_list"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:divider="@color/colores_news_14"
+    android:dividerHeight="10dp"
+    android:scrollbars="none" >
+
+</ListView>

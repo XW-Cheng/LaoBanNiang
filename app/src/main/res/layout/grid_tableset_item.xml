@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" >
+
+        <ImageView
+            android:id="@+id/iv_tableset_bk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_batch" />
+
+        <TextView
+            android:id="@+id/tv_tableset_num"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shap_navy"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="1号桌"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_viewqrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_tableset_bk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:maxLines="1"
+            android:text="查看二维码"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/iv_tableset_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_tableset_bk"
+            android:layout_alignRight="@+id/iv_tableset_bk"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</LinearLayout>

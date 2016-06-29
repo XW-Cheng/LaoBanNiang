@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.xizhi.mezone.b"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 81
+        versionName "1.0.2"
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            shrinkResources true//去掉不用资源
+            minifyEnabled false//是否进行代码混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+ //  debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+//   releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    final    LIBRARY_VERSION='23+'
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:support-v4:$LIBRARY_VERSION"
+    compile "com.android.support:appcompat-v7:$LIBRARY_VERSION"
+    compile "com.android.support:design:$LIBRARY_VERSION"
+    compile  'com.jakewharton:butterknife:7.0.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+

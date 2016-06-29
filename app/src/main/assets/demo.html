@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function updateHtml(contents){
+	 document.getElementById("content").innerHTML =   
+         "你通过 android 中的控件调用了html 中js 的方法"+contents;
+	alert("dialog");
+}
+
+</script>
+</head>
+<body>
+<a onClick="window.login.startFunction()" >调用java中个的方法</a>
+<br>
+<span id="content">hffhhf</span>
+</body>
+</html>

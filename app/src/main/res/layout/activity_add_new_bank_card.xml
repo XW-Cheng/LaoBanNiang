@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_add_new_bank_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/cardholder"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_add_new_bcard_cardholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:background="@color/white"
+            android:gravity="right"
+            android:inputType="text"
+            android:paddingRight="5dp"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_add_new_bcard_opening_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/opening_bank"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_add_new_bcard_opening_bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:src="@mipmap/service_new_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/cardnumber"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_add_new_bcard_cardnumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:inputType="number"
+            android:maxLength="19"
+            android:paddingRight="5dp"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/phonenumber"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_add_new_bcard_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="5dp"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_new_bcard_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shap_green"
+        android:gravity="center"
+        android:padding="10dp"
+        android:clickable="true"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

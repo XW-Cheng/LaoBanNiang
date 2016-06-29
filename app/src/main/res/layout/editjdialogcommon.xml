@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_white_round_bg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/pay_pwd"
+        android:textColor="#262626"
+        android:textSize="18sp" />
+
+    <cn.com.hgh.gridpasswordview.GridPasswordView
+        android:id="@+id/editjdialogcommon_gpv_customUi_chang_old"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/gridpassword_bg"
+        app:lineColor="@color/colores_news_11"
+        app:lineWidth="1dp"
+        app:passwordLength="6"
+        app:textColor="@color/black"
+        app:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/editjdialogcommon_tv_dialog_common_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dbdbdb" />
+
+        <TextView
+            android:id="@+id/editjdialogcommon_tv_dialog_common_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="#0091ff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

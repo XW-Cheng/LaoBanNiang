@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_tabs_llt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colores_news_14"
+        android:orientation="vertical" >
+
+        <cn.com.hgh.view.PagerSlidingTabStrip
+            android:id="@+id/tabs_act_minemsg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/colores_news_01"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabBackground="@drawable/background_tab"
+            app:pstsUnderlineHeight="3dp"
+            app:selectedTabTextColor="@color/colores_news_01" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_act_minemsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_seracth_llt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colores_news_14"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <cn.com.hgh.view.AbPullToRefreshView
+            android:id="@+id/top_seracth_abpulltorefreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ListView
+                android:id="@+id/top_seracth_llt_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+        </cn.com.hgh.view.AbPullToRefreshView>
+
+        <ImageView
+            android:id="@+id/top_seracth_llt_iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/iv_empty"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+D:\studio  project\LinktownB
+         --                 
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* name.txt
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\android-support-v7-recyclerview.jar => app\libs\android-support-v7-recyclerview.jar
+* libs\arm64-v8a\libBaiduMapSDK_base_v3_7_1.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_base_v3_7_1.so
+* libs\arm64-v8a\libBaiduMapSDK_map_v3_7_1.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_map_v3_7_1.so
+* libs\arm64-v8a\libBaiduMapSDK_search_v3_7_1.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_search_v3_7_1.so
+* libs\arm64-v8a\libiconv.so => app\src\main\jniLibs\arm64-v8a\libiconv.so
+* libs\arm64-v8a\libjpush206.so => app\src\main\jniLibs\arm64-v8a\libjpush206.so
+* libs\arm64-v8a\liblocSDK6a.so => app\src\main\jniLibs\arm64-v8a\liblocSDK6a.so
+* libs\arm64-v8a\libZBarDecoder.so => app\src\main\jniLibs\arm64-v8a\libZBarDecoder.so
+* libs\armeabi-v7a\libBaiduMapSDK_base_v3_7_1.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_base_v3_7_1.so
+* libs\armeabi-v7a\libBaiduMapSDK_map_v3_7_1.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_map_v3_7_1.so
+* libs\armeabi-v7a\libBaiduMapSDK_search_v3_7_1.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_search_v3_7_1.so
+* libs\armeabi-v7a\libiconv.so => app\src\main\jniLibs\armeabi-v7a\libiconv.so
+* libs\armeabi-v7a\libjpush206.so => app\src\main\jniLibs\armeabi-v7a\libjpush206.so
+* libs\armeabi-v7a\liblocSDK6a.so => app\src\main\jniLibs\armeabi-v7a\liblocSDK6a.so
+* libs\armeabi-v7a\libZBarDecoder.so => app\src\main\jniLibs\armeabi-v7a\libZBarDecoder.so
+* libs\armeabi\libBaiduMapSDK_base_v3_7_1.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_base_v3_7_1.so
+* libs\armeabi\libBaiduMapSDK_map_v3_7_1.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_map_v3_7_1.so
+* libs\armeabi\libBaiduMapSDK_search_v3_7_1.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_search_v3_7_1.so
+* libs\armeabi\libiconv.so => app\src\main\jniLibs\armeabi\libiconv.so
+* libs\armeabi\libjpush206.so => app\src\main\jniLibs\armeabi\libjpush206.so
+* libs\armeabi\liblocSDK6a.so => app\src\main\jniLibs\armeabi\liblocSDK6a.so
+* libs\armeabi\libZBarDecoder.so => app\src\main\jniLibs\armeabi\libZBarDecoder.so
+* libs\badgeview.jar => app\libs\badgeview.jar
+* libs\BaiduLBS_Android.jar => app\libs\BaiduLBS_Android.jar
+* libs\fastjson-1.1.27-android.jar => app\libs\fastjson-1.1.27-android.jar
+* libs\GetuiExt-2.0.3.jar => app\libs\GetuiExt-2.0.3.jar
+* libs\GetuiSDK2.8.1.0.jar => app\libs\GetuiSDK2.8.1.0.jar
+* libs\glide-3.6.1.jar => app\libs\glide-3.6.1.jar
+* libs\libammsdk.jar => app\libs\libammsdk.jar
+* libs\nineoldandroids-2.4.0.jar => app\libs\nineoldandroids-2.4.0.jar
+* libs\okhttp-3.2.0.jar => app\libs\okhttp-3.2.0.jar
+* libs\okhttputils-2_3_7.jar => app\libs\okhttputils-2_3_7.jar
+* libs\okio-1.6.0.jar => app\libs\okio-1.6.0.jar
+* libs\sun.misc.BASE64Decoder.jar => app\libs\sun.misc.BASE64Decoder.jar
+* libs\x86_64\libBaiduMapSDK_base_v3_7_1.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_base_v3_7_1.so
+* libs\x86_64\libBaiduMapSDK_map_v3_7_1.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_map_v3_7_1.so
+* libs\x86_64\libBaiduMapSDK_search_v3_7_1.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_search_v3_7_1.so
+* libs\x86_64\libiconv.so => app\src\main\jniLibs\x86_64\libiconv.so
+* libs\x86_64\libjpush206.so => app\src\main\jniLibs\x86_64\libjpush206.so
+* libs\x86_64\liblocSDK6a.so => app\src\main\jniLibs\x86_64\liblocSDK6a.so
+* libs\x86_64\libZBarDecoder.so => app\src\main\jniLibs\x86_64\libZBarDecoder.so
+* libs\ZBarDecoder.jar => app\libs\ZBarDecoder.jar
+* libs\zxing.jar => app\libs\zxing.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_year_month_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="2015年"
+        android:textColor="@color/colores_news_10"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colores_news_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/year_month_choice_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_fbfbfb" />
+
+</LinearLayout>

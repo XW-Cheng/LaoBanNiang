@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <GridView
+        android:visibility="gone"
+        android:id="@+id/gview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip" >
+    </GridView>
+<ListView 
+    android:id="@+id/activity_servicemall_list"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:divider="@color/colores_news_14"
+    android:dividerHeight="1dp"
+    android:scrollbars="none" >
+
+</ListView>
+    <ImageView
+        android:id="@+id/iv_servicemall_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+</LinearLayout>

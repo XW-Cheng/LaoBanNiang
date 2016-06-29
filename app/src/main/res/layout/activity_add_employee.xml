@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_add_salse_employee_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <cn.com.hgh.view.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res/com.xizhi.mezone.b"
+            android:id="@+id/img_add_sales_employee_modify"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/defaultpeson"
+            app:border="false" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/head_uploading"
+            android:textColor="@color/colores_news_11"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/service_new_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/employee_number"
+            android:textColor="@color/colores_news_12"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_add_sales_employee_modify_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/colores_news_10"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edit_add_sales_employee_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/please_input_employee_name"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colores_news_14" />
+
+        <EditText
+            android:id="@+id/edit_add_sales_employee_modify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/please_input_employee_phone"
+            android:inputType="phone|number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colores_news_14" />
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edit_add_sales_employee_modify_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/please_input_employee_position"
+            android:padding="10dp"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sales_employee_modify_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

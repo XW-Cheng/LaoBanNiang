@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <cn.com.hgh.view.SlideListView2
+            android:id="@+id/fm_messagefragment_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff4f7f9"
+            android:cacheColorHint="#00000000"
+            android:divider="#dddbdb"
+            android:dividerHeight="1.0px"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </cn.com.hgh.view.SlideListView2>
+
+        <ImageView
+            android:id="@+id/fm_messagefragment_iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/iv_empty"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ededed" />
+
+    <LinearLayout
+        android:id="@+id/fm_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_selectall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_uncheck" />
+
+        <TextView
+            android:id="@+id/tv_seleteall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:singleLine="true"
+            android:text="全选"
+            android:textColor="@color/colores_news_10"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <LinearLayout
+            android:id="@+id/login_div"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_toexamine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:singleLine="true"
+                android:text="审核"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="50dp"
+                android:background="#d9d9d9" />
+
+            <TextView
+                android:id="@+id/tv_deletemessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:singleLine="true"
+                android:text="删除"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

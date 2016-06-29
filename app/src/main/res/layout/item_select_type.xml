@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <CheckBox
+        android:id="@+id/chbx_select_type"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/select_type"
+        android:button="@null"
+        android:checked="false" />
+
+    <LinearLayout
+        android:id="@+id/llt_select_type_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_select_type_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="餐饮管理"
+            android:textColor="@color/colores_news_10"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/right_selecttype_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            android:scaleType="centerInside"
+            android:src="@mipmap/service_new_right" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_add_shop_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colores_news_14"
+        android:divider="@color/color_e3e3e3"
+        android:dividerHeight="@dimen/line"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/img_add_shop_type_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+
+</LinearLayout>

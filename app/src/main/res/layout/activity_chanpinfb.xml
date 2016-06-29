@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relt_activity_chanpinfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imageView_activity_chanpinfb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+              android:scaleType="fitXY"
+                android:src="@mipmap/add_connect_goods_ing" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/service_new_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/imageView"
+                android:text="图片上传"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webView_activity_chanpinfb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+        </WebView>
+    </LinearLayout>
+
+</ScrollView>

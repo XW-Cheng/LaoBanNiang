@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xizhi.mezone.b"
+          android:versionCode="81"
+          android:versionName="1.0.2">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21"/>
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 电话的相关权限 -->
+    <uses-feature
+        android:name="android.hardware.telephoney"
+        android:required="true"/>
+    <!-- 闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 二维码的相关权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!-- 读写SD卡的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 查看设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 读取短信内容 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS">
+    </uses-permission>
+    <!-- 加入手机震动，一定要在manifest.xml中加入权限： -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 个推权限配置 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- ibeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.xizhi.mezone.b"/>
+    <!-- 替换为第三方应用的包名 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.xizhi.mezone.b"
+        android:protectionLevel="normal">
+    </permission>
+    <!-- 替换为第三方应用的包名 -->
+
+    <application
+        android:name="com.lianbi.mezone.b.app.MyLinkTownBApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name="com.lianbi.mezone.b.ui.FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.MallIntroduceActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.InfoDetailsActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ScanningQRActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.AddTablesetActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.SearchActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.TableSetActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ServiceMallActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ChoiceDingdanInfoWayActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.IncomeDetailActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.DingdanInfoActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.SimapleActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.LoginPasswordActivity"/>
+        <activity android:name="com.zbar.lib.CaptureActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.OrderDetailActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MainActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MessageDetailActivty"/>
+        <activity android:name="com.lianbi.mezone.b.ui.TransactionManagementActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ChanPinGuanLiActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ChanPinfbActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ChanPinCKActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MyShopChanPinfbActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MyMemberManagementActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.AddNewMemberActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MemberExplainActivity"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.AddShopActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MineLiCaiActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.SalesDetailActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.EditeFormulateActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ShouRuDesitionActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.RegularDemandManagementActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.TotalShouRuActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.DailyShouRuActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MonthShouRuActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.EveryDayMoneyActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.WithdrawDepositActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.WithdrawDepositDesitionActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MemberManagementFormulateActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.AddBankCardActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.AddNewBankCardActivity"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.BankListActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ChangePaymentPwdActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ForgetPaymentPwdActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.PaymentPwdSetActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.SettingPaymentPwdActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ShouRuHActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ShouRuActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.Sucess_FailledActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ManageMoneyProductActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.MineMsgActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ServiceShopActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ActionProduceActivity"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.OrderProductListActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.MineTextInfoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.OrderProductActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.lianbi.mezone.b.ui.GuiderActivity"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.LoginActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.MemberEditActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.RegisterActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.ForgetPassWordActivty"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.lianbi.mezone.b.ui.WebActivty"/>
+        <activity android:name="com.lianbi.mezone.b.ui.H5WebActivty"/>
+        <!-- 百度地图 key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Y9MlkXD5QQyDQTNLSPfQeP6CBcYcwtYS"/>
+        <!-- 定位的服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+        <!-- 下载程序广播 -->
+        <receiver android:name="com.lianbi.mezone.b.receiver.DownloaderReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.lianbi.mezone.b.ui.MySupplyGoodsActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.ConnectGoodsActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.AddConnectGoodsActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.SupplyGoodsRecordActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.SupplyRecordDetailActivity">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.GoodsDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.GoodsMallActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.GoodsMallDetailActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.FeedBackActivity"/>
+        <activity android:name="com.lianbi.mezone.b.ui.OtherActivity"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.EmployeeManageActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.SalseEmplyeeModifyActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.PublishSupplyGoodsActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.AddEmployeeActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.MyShopActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.OrderProductDetailActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.SelectTypeActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.TypeDetailActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.MemberManagementActivity">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.MapActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.MyShopIntroduceActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.ShopConnectActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.ShopConnectPhoneActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lianbi.mezone.b.ui.ChangeShopActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.PhotoDeleteActivity">
+        </activity>
+        <activity android:name="com.lianbi.mezone.b.ui.AboutUsActivity"/>
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="m5fJQU8V6e53Ja2cRzJhcA"/>
+        <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="LtlrRqqMSFA7NEVE79X1aA"/>
+        <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="2kKEhjfy7m97cCkcEadx12"/>
+        <!-- 替换为第三方应用的APPSECRET -->
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser"/>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice"/>
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.xizhi.mezone.b"
+            android:exported="true"
+            android:process=":pushservice"/>
+        <!-- 替换为第三方应用的包名 -->
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <!-- 替换为第三方应用的APPID -->
+                <action android:name="com.igexin.sdk.action.m5fJQU8V6e53Ja2cRzJhcA"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.lianbi.mezone.b.push.PushDemoReceiver"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- APPID需要替换为相应的个推应用ID -->
+                <action android:name="com.igexin.sdk.action.m5fJQU8V6e53Ja2cRzJhcA"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice"/>
+        <!-- 个推SDK配置结束 -->
+    </application>
+
+</manifest>

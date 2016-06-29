@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <LinearLayout
+                android:id="@+id/llt_servicemall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_itemmall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_servicename"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="消息"
+                    android:textColor="@color/colores_news_10"
+                    android:textSize="15sp" />
+             <RelativeLayout
+                android:id="@+id/ray_right"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                 android:layout_weight="1"
+                 android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+              <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="下载"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_6bb4ff"
+                    android:textSize="14sp"
+                     />
+               <TextView
+                    android:id="@+id/tv_newprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="¥0.01/年"
+                    android:layout_below="@id/tv_download"
+                    android:textColor="@color/colores_news_01"
+                    android:textSize="14sp"
+                     />   
+                 
+                  <TextView
+                    android:id="@+id/tv_oldprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/tv_download"
+                    android:layout_toRightOf="@id/tv_newprice"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="¥100/年"
+                    android:textColor="@color/colores_news_11"
+                    android:textSize="14sp"
+                     />
+             </RelativeLayout>
+              <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/service_new_right" />
+<!--                 <TextView
+                    android:id="@+id/tv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="下载"
+                    android:textColor="@color/color_6bb4ff"
+                    android:textSize="14sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/service_new_right" />
+ -->            </LinearLayout>
+
+</LinearLayout>

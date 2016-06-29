@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/member_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="13845215288"
+            android:textColor="@color/colores_news_10"
+            android:textSize="18sp" />
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        
+        <Button 
+            android:id="@+id/member_refuse_btn"
+            android:layout_width="53dp"
+            android:layout_height="23dp"
+            android:text="拒绝"
+            android:textColor="@color/colores_news_12"
+            android:textSize="15sp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_addmember_refuse"
+            />
+        
+        <Button 
+            android:id="@+id/member_accept_btn"
+            android:layout_width="53dp"
+            android:layout_height="23dp"
+            android:text="同意"
+            android:textColor="@color/colores_news_01"
+            android:textSize="15sp"
+            
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_addmember_accept"
+            android:layout_marginRight="15dp"
+            />
+        
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colores_news_13"
+        android:layout_marginLeft="15dp"
+        />
+    
+
+</LinearLayout>

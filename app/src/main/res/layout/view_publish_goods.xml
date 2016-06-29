@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap_corner_publish_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/et_publish_goods_num1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入数量"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/colores_news_01"
+                android:textColorHint="@color/colores_news_11"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_publish_goods_num_unit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="单位"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/colores_news_10"
+                android:textColorHint="@color/colores_news_11"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/colores_news_10" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap_corner_publish_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/et_publish_goods_price1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入价格"
+                android:inputType="number|numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/colores_news_01"
+                android:textColorHint="@color/colores_news_11"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_publish_goods_price_unit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="元"
+                android:textColor="@color/colores_news_10"
+                android:textColorHint="@color/colores_news_11"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_publish_goods_num1"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/publish_goodes_plus" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colores_news_14" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llt_add_connectgoods_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/img_add_connect_goods"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/add_connect_goods_ing" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="图片上传" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/service_new_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edt_add_connect_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="请输入联系人姓名(限6个汉字)"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colores_news_14" />
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edt_add_connect_goods_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="请输入联系电话"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colores_news_14" />
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edt_add_connect_goods_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="请输入货源店名称(限20字)"
+            android:inputType="text"
+            android:maxLength="20"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colores_news_14" />
+
+        <cn.com.hgh.view.ContainsEmojiEditText
+            android:id="@+id/edt_add_connect_goods_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="请输入货源内容(限20字)"
+            android:inputType="text"
+            android:maxLength="20"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_connect_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14" >
+
+    <ScrollView
+        android:id="@+id/pubgoods_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colores_news_14"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colores_news_14"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llt_publish_goods_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/img_goodes_publish_introduce"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                       android:scaleType="fitXY"
+                        android:src="@mipmap/add_connect_goods_ing" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="图片上传"
+                        android:textColor="@color/colores_news_11"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/service_new_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llt_publish_goods_leibie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="货源类别"
+                        android:textColor="@color/colores_news_11"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_publish_goods_leibie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colores_news_10"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/service_new_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colores_news_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llt_publish_goods_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="有效时间"
+                        android:textColor="@color/colores_news_11"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_publish_goods_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:text="1周内"
+                        android:textColor="@color/colores_news_10"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/service_new_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colores_news_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llt_publish_goods_owner_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/clock_tma" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/llt_publish_goods_open_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="14dp" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="起始时间"
+                                android:textColor="@color/colores_news_12" />
+
+                            <TextView
+                                android:id="@+id/tv_publish_goods_open_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/service_new_right" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/line"
+                            android:background="@color/color_e3e3e3" />
+
+                        <LinearLayout
+                            android:id="@+id/llt_publish_goods_over_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="结束时间"
+                                android:textColor="@color/colores_news_12" />
+
+                            <TextView
+                                android:id="@+id/tv_publish_goods_over_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/service_new_right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <cn.com.hgh.view.ContainsEmojiEditText
+                        android:id="@+id/et_publish_goods_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="请输入货源名称"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/colores_news_10"
+                        android:textColorHint="@color/colores_news_11"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colores_news_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <cn.com.hgh.view.ContainsEmojiEditText
+                        android:id="@+id/et_publish_goods_desition"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="top"
+                        android:hint="请输入货源详情"
+                        android:maxLength="500"
+                        android:minHeight="150dp"
+                        android:textColor="@color/colores_news_10"
+                        android:textColorHint="@color/colores_news_11"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <cn.com.hgh.view.MyContainsViewJJ
+                        android:id="@+id/mycontainsviewjj1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </cn.com.hgh.view.MyContainsViewJJ>
+
+                    <cn.com.hgh.view.MyContainsViewJJ
+                        android:id="@+id/mycontainsviewjj2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </cn.com.hgh.view.MyContainsViewJJ>
+
+                    <cn.com.hgh.view.MyContainsViewJJ
+                        android:id="@+id/mycontainsviewjj3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </cn.com.hgh.view.MyContainsViewJJ>
+
+                    <cn.com.hgh.view.MyContainsViewJJ
+                        android:id="@+id/mycontainsviewjj4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </cn.com.hgh.view.MyContainsViewJJ>
+
+                    <cn.com.hgh.view.MyContainsViewJJ
+                        android:id="@+id/mycontainsviewjj5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </cn.com.hgh.view.MyContainsViewJJ>
+                </LinearLayout>
+            </LinearLayout>
+
+            <cn.com.hgh.view.MyContainsViewJJ
+                android:id="@+id/mycontainsviewjj_anima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+            </cn.com.hgh.view.MyContainsViewJJ>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_publish_goods_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

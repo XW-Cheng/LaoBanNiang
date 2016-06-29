@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.hgh.view.AbPullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/abpulltorefreshview_act_orderproductlistactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView_act_orderproductlistactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/colores_news_14"
+        android:dividerHeight="@dimen/line"
+        android:listSelector="@color/transparent"
+        android:paddingLeft="15dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/iv_empty_act_orderproductlistactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+
+</cn.com.hgh.view.AbPullToRefreshView>

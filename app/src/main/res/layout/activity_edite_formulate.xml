@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员级别名称"
+                android:textColor="@color/colores_news_11"
+                android:textSize="16sp" />
+
+            <cn.com.hgh.indexscortlist.ClearEditText
+                android:id="@+id/edt_formulate_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="普通会员"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colores_news_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠"
+                android:textColor="@color/colores_news_11"
+                android:textSize="16sp" />
+
+            <cn.com.hgh.indexscortlist.ClearEditText
+                android:id="@+id/edt_formulate_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="@color/white"
+                android:text="10"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colores_news_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需消费(元)"
+                android:textColor="@color/colores_news_11"
+                android:textSize="16sp" />
+
+            <cn.com.hgh.indexscortlist.ClearEditText
+                android:id="@+id/edt_formulate_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colores_news_14" />
+
+        <cn.com.hgh.indexscortlist.ClearEditText
+            android:id="@+id/edt_formulate_other"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="请输入会员其他权益及规则概述"
+            android:padding="10dp"
+            android:textColor="@color/colores_news_10"
+            android:textColorHint="@color/colores_news_12"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开启该会员等级"
+            android:textColor="@color/colores_news_10"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/tgl_member_formulate"
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            android:background="@drawable/selector_member_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_member_formulate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

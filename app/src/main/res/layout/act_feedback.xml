@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <cn.com.hgh.view.ContainsEmojiEditText
+        android:id="@+id/opinion_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入标题"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:textColor="@color/colores_news_10"
+        android:textColorHint="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <cn.com.hgh.view.ContainsEmojiEditText
+        android:id="@+id/opinion_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入产品意见,我们将不断优化体验"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:minHeight="180dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+         android:textColor="@color/colores_news_10"
+        android:textColorHint="@color/colores_news_12"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_shop_introduce1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/add_connect_goods_ing" />
+
+        <ImageView
+            android:id="@+id/img_shop_introduce2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/add_connect_goods_ing"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_shop_introduce3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/add_connect_goods_ing"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="bottom"
+            android:text="最多三张"
+            android:textColor="@color/colores_news_12" />
+    </LinearLayout>
+
+    <cn.com.hgh.view.ContainsEmojiEditText
+        android:id="@+id/edt_shop_introduce_intro"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="商铺简介(50字内)"
+        android:maxLength="40"
+        android:padding="10dp"
+        android:textColor="@color/colores_news_10"
+        android:textColorHint="@color/colores_news_12"
+        android:textSize="16sp" />
+
+    <cn.com.hgh.view.ContainsEmojiEditText
+        android:id="@+id/edt_shop_introduce_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="商铺详细介绍(500字内)"
+        android:maxLength="500"
+        android:padding="10dp"
+        android:textColor="@color/colores_news_10"
+        android:textColorHint="@color/colores_news_12"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_add_shop_introduce_summbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

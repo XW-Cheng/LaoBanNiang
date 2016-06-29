@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:scaleType="centerInside" />
+    <WebView 
+        android:id="@+id/web_mallintroduce"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+      />
+    
+<RelativeLayout
+       android:id="@+id/ray_bottom"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@mipmap/icon_mallbottom"
+    >
+  <TextView
+       android:id="@+id/tv_download"
+       android:layout_centerInParent="true"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:padding="5dp"
+       android:drawableLeft="@mipmap/icon_download"
+       android:text="点击下载"
+       android:textSize="15sp" 
+       android:drawablePadding="5dp"
+       android:gravity="center_vertical"
+       android:textColor="#ffffff"
+    />
+</RelativeLayout>
+</LinearLayout>

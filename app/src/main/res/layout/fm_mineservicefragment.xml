@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colores_news_14"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/grid_fm_mineservicefragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colores_news_14"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+    <ImageView
+        android:id="@+id/img_fm_mineservicefragment_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/iv_empty"
+        android:visibility="gone" />
+
+</LinearLayout>

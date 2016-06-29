@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+    <!-- 圆角ImageVIew -->
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width1" format="dimension"></attr>
+        <attr name="border_color1" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <!-- ************************************************ -->
+    <!-- 任意圆角ImageView -->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <!-- ************************************************ -->
+    <!-- 密码文本框 -->
+    <declare-styleable name="gridPasswordView">
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="gridColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordTransformation" format="string" />
+        <attr name="passwordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+    </declare-styleable>
+    <!-- ************************************************ -->
+    <!-- 侧滑删除 -->
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    <!-- ************************************************ -->
+    <!-- SliderLayout -->
+    <declare-styleable name="Themes">
+        <attr name="SliderStyle" format="reference" />
+        <attr name="PagerIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SliderLayout">
+
+        <!-- indicator visibility -->
+        <attr name="indicator_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="auto_cycle" format="boolean" />
+
+        <!-- page animation -->
+        <attr name="pager_animation" format="enum">
+            <enum name="Default" value="0">Default</enum>
+            <enum name="Accordion" value="1">Accordion</enum>
+            <enum name="Background2Foreground" value="2">Background2Foreground</enum>
+            <enum name="CubeIn" value="3">CubeIn</enum>
+            <enum name="DepthPage" value="4">DepthPage</enum>
+            <enum name="Fade" value="5">Fade</enum>
+            <enum name="FlipHorizontal" value="6">FlipHorizontal</enum>
+            <enum name="FlipPage" value="7">FlipPage</enum>
+            <enum name="Foreground2Background" value="8">Foreground2Background</enum>
+            <enum name="RotateDown" value="9">RotateDown</enum>
+            <enum name="RotateUp" value="10">RotateUp</enum>
+            <enum name="Stack" value="11">Stack</enum>
+            <enum name="Tablet" value="12">Tablet</enum>
+            <enum name="ZoomIn" value="13">ZoomIn</enum>
+            <enum name="ZoomOutSlide" value="14">ZoomOutSlide</enum>
+            <enum name="ZoomOut" value="15">ZoomOut</enum>
+        </attr>
+
+        <!-- page animation time span -->
+        <attr name="pager_animation_span" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PagerIndicator">
+
+        <!-- indicator visibility -->
+        <attr name="visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="shape" format="enum">
+            <enum name="oval" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+        <attr name="selected_color" format="color" />
+        <attr name="unselected_color" format="color" />
+
+        <!-- indicator style -->
+        <attr name="selected_drawable" format="reference" />
+        <attr name="unselected_drawable" format="reference" />
+        <attr name="selected_width" format="dimension" />
+        <attr name="selected_height" format="dimension" />
+        <attr name="unselected_width" format="dimension" />
+        <attr name="unselected_height" format="dimension" />
+        <attr name="padding_left" format="dimension" />
+        <attr name="padding_right" format="dimension" />
+        <attr name="padding_top" format="dimension" />
+        <attr name="padding_bottom" format="dimension" />
+        <attr name="selected_padding_left" format="dimension" />
+        <attr name="selected_padding_right" format="dimension" />
+        <attr name="selected_padding_top" format="dimension" />
+        <attr name="selected_padding_bottom" format="dimension" />
+        <attr name="unselected_padding_left" format="dimension" />
+        <attr name="unselected_padding_right" format="dimension" />
+        <attr name="unselected_padding_top" format="dimension" />
+        <attr name="unselected_padding_bottom" format="dimension" />
+    </declare-styleable>
+
+    <!-- ************************************************ -->
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+    <!-- ************************************************ -->
+	<!-- 	TimeSelector -->
+    <declare-styleable name="PickerView">
+        <attr name="isLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape1">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

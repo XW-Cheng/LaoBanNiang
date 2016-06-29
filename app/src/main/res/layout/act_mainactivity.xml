@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/fm_funcpage0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_funcpage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_funcpage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_funcpage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colores_news_14" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_shouye"
+                android:layout_width="35dp"
+                android:layout_height="38.5dp"
+                android:background="@drawable/shouye"
+                android:button="@color/transparent"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_jiaoyiguanli"
+                android:layout_width="35dp"
+                android:layout_height="38.5dp"
+                android:background="@drawable/rb_icon_jiaoyiguanli"
+                android:button="@color/transparent"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_caiwushi"
+                android:layout_width="35dp"
+                android:layout_height="38.5dp"
+                android:background="@drawable/rb_icon_caiwushi"
+                android:button="@color/transparent"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                android:layout_width="35dp"
+                android:layout_height="38.5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rb_icon_mine"
+                android:button="@color/transparent"
+                android:duplicateParentState="true" />
+
+            <ImageView
+                android:id="@+id/img_main_red"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/rb_mine"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_redpoint"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

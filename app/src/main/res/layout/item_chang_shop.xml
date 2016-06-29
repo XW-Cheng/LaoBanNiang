@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <CheckBox
+            android:id="@+id/chbx_change_shop"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/select_type"
+            android:button="@null"
+            android:checked="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_change_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colores_news_10"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_change_shop_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colores_news_13"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_change_shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colores_news_13"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="10dp"
+        android:background="@color/color_e3e3e3" />
+
+</LinearLayout>

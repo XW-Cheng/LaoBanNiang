@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- dialog -->
+    <style name="DialogStyle_1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.CustomDialog1" parent="android:style/Theme.Dialog">
+       <!-- <item name="android:windowBackground">@drawable/filled_box_1</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- dialog -->
+    <style name="DialogStyle_2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_8000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- *********************************************************************** -->
+    <!-- 密码文本框 -->
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <!-- *********************************************************************** -->
+    <!-- GifView -->
+    <style name="Widget_GifView"></style>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <!-- *********************************************************************** -->
+    <!-- 底部弹窗动画 -->
+    <style name="slide_up_in_down_out">
+        <item name="android:windowEnterAnimation">@anim/slide_up_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_out</item>
+    </style>
+    <!-- *********************************************************************** -->
+
+
+    <!-- 顶部弹窗动画 -->
+    <style name="slide_down_in_up_out">
+        <item name="android:windowEnterAnimation">@anim/slide_down_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_up_out</item>
+    </style>
+    <!-- *********************************************************************** -->
+    <style name="DialogStyle_4" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- *********************************************************************** -->
+    <!-- TimeSelcor对话框 -->
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tablename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="1号桌"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_scanningqr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        />
+<!-- android:background="@drawable/icon_erweima"  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/scanningqr"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_keepqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/keepqr"
+        android:background="@drawable/shape_search_date_edt_bg_new"
+        android:textColor="@color/color_555555"
+        android:textSize="16sp" />
+    
+</LinearLayout>
